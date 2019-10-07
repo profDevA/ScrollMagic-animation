@@ -1,19 +1,30 @@
 <!doctype html>
-
 <head>
 
     <meta charset="utf-8">
 
-    <title>Scroll</title>
-
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"           content="width=700">
+    <meta name="keywords"           content="ScrollMagic, scrolling, animation, Superscrollorama, Scrollorama, scroll, interaction, animation, sticky, pinning, parallax">
+    <meta name="description"        content="ScrollMagic - The javascript library for magical scroll interactions.
+                                             ScrollMagic helps you to easily react to the user's current scroll position.">
+    <meta name="author"             content="Jan Paepke (www.janpaepke.de)">
+    <meta name="designer"           content="Jan Paepke (www.janpaepke.de)">
+    <meta property="fb:admins"      content="595418934">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="http://scrollmagic.io/">
+    <meta property="og:image"       content="http://scrollmagic.io/assets/img/demo_fb_preview.jpg">
+    <meta property="og:title"       content="ScrollMagic">
+    <meta property="og:description" content="The javascript library for magical scroll interactions. ScrollMagic helps you to easily react to the user's current scroll position.">
 
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon-precomposed.png">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Roboto+Condensed:400,300,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<!--    <link rel="stylesheet" href="assets/css/normalize.css">-->
-<!--    <link rel="stylesheet" href="assets/css/style.css">-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/demo.css">
 
     <script src="assets/js/lib/greensock/TweenMax.min.js"></script>
@@ -25,6 +36,8 @@
     <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
     <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
     <script src="assets/js/demo.js"></script>
+
+    <title>Scroll Based Animation</title>
 
 </head>
 <body>
@@ -86,43 +99,73 @@
                     }
                 });
             }
-        </script>
+            $(function () {
+                // set current version in cdn link(s)
+                var cdnLinks = [
+                    "cdnjs.cloudflare.com/ajax/libs/ScrollMagic/%version%/ScrollMagic.min.js",
+                    "cdnjs.cloudflare.com/ajax/libs/ScrollMagic/%version%/plugins/debug.addIndicators.min.js",
+                ];
+                var cdnCode = cdnLinks.map(function(link) {
+                    return '<script src="//' + link.replace(/%version%/gim, ScrollMagic.version) + '"></script' + '>';
+                }).join("\n");
 
-        <section id="scroll-section">
-            <div id="scroll-animation-div">
+                $("<pre>").text(cdnCode).appendTo("#get-it-now code.cdn");
+            });
+
+        </script>
+        <section id="start">
+            <div id="intro">
+                <h1>ScrollMagic</h1>
 
                 <img class="tophat" src="assets/img/demo_tophat.png">
                 <img class="wand" src="assets/img/demo_wand.png">
 
+
             </div>
             <script>
+                // wrap each title letter
+                $("#start h1").wrapEach(/(.)/g, "<span>$1</span>");
 
                 // animations
                 var nervousHat = new TimelineMax({repeat: -1, yoyo: true})
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "+=5", left: "-=6", rotation: -3}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "-=10", left: "+=6", rotation: 0}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "+=5", left: "+=6", rotation: 3}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "-=5", left: "-=3", rotation: 1.5}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "+=5", left: "-=6", rotation: -1.5}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "+=5", left: "+=3", rotation: 0}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "-=10"}));
-
-                var abracadabra = TweenMax.fromTo("#scroll-section .wand", 1, {top: -$(window).height()/3, left: 370, rotation: 20}, {top: 10, rotation: -20});
-
+                    .add(TweenMax.to("#start .tophat", 0.3, {bottom: "+=5", left: "-=6", rotation: -3}))
+                    .add(TweenMax.to("#start .tophat", 0.3, {bottom: "-=10", left: "+=6", rotation: 0}))
+                    .add(TweenMax.to("#start .tophat", 0.3, {bottom: "+=5", left: "+=6", rotation: 3}))
+                    .add(TweenMax.to("#start .tophat", 0.3, {bottom: "-=5", left: "-=3", rotation: 1.5}))
+                    .add(TweenMax.to("#start .tophat", 0.3, {bottom: "+=5", left: "-=6", rotation: -1.5}))
+                    .add(TweenMax.to("#start .tophat", 0.3, {bottom: "+=5", left: "+=3", rotation: 0}))
+                    .add(TweenMax.to("#start .tophat", 0.3, {bottom: "-=10"}));
+                var abracadabra = TweenMax.fromTo("#start .wand", 1, {top: -$(window).height()/3, left: 370, rotation: 20}, {top: 10, rotation: -20});
                 var reveal = new TimelineMax()
                     .add([
-                            TweenMax.to("#scroll-section .tophat", 1, {bottom: $(window).height(), left: "-=50", rotation: -20}),
-                            TweenMax.from("#scroll-section h1", 1, {scale: 0.2, top: "+=70"}),
-                            TweenMax.to("#scroll-section .wand", 0.8, {top: -$(window).height()/3, left: 450, rotation: 30}),
-                            TweenMax.to("#scroll-section .floor", 1, {autoAlpha: 0})
+                            TweenMax.to("#start .tophat", 1, {bottom: $(window).height(), left: "-=50", rotation: -20}),
+                            TweenMax.from("#start h1", 1, {scale: 0.2, top: "+=70"}),
+                            TweenMax.to("#start .wand", 0.8, {top: -$(window).height()/3, left: 450, rotation: 30}),
+                            TweenMax.to("#start .floor", 1, {autoAlpha: 0})
                         ]);
-
+                var laola = new TimelineMax()
+                    .add(TweenMax.staggerTo("#start h1 span", 0.5, {top: -150, x: -75, scale: 2, color: '#ff4468' }, 0.2))
+                    .add(TweenMax.staggerTo("#start h1 span", 0.5, {top: 0, x: 0, scale: 1, color: '#fff'}, 0.2), 0.5);
 
                 // container pin
                 var startpin = new ScrollMagic.Scene({
                         duration: 700
                     })
-                    .setPin("section#scroll-section")
+                    .setPin("section#start")
+                    .addTo(controller);
+
+                // msg scroll ani
+                new ScrollMagic.Scene({
+                        duration: 140,
+                        offset: -100
+                    })
+                    .setTween(TweenMax.to("#msg div.scroll", 1, {backgroundPosition: "0 13px", repeat: -1, delay: 1, repeatDelay: 2, ease: Linear.easeNone}))
+                    .addTo(controller);
+                // msg hide
+                new ScrollMagic.Scene({
+                        offset: 40
+                    })
+                    .setTween(TweenMax.to("#msg", 0.5, {bottom: -40}))
                     .addTo(controller);
 
                 // hat movement
@@ -150,12 +193,19 @@
                     .setTween(reveal)
                     .addTo(controller);
 
-
+                // jumping text
+                new ScrollMagic.Scene({
+                        duration: 200,
+                        offset: 450
+                    })
+                    .setTween(laola)
+                    .addTo(controller);
 
             </script>
         </section>
 
+
+
     </div>
-    <script src="assets/js/tracking.js"></script>
 </body>
 </html>

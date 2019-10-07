@@ -1,15 +1,514 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="22cafb6c-ce4f-49d2-a4cc-d3b1f60d60b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nojekyll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/examples.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/examples.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/tracking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/build/banner.min.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/build/banner.regular.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/build/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/build/filesize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/build/jsdoc-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/build/logger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/jsdoc.conf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/static/ScrollScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/publish.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/URI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/bootstrap-dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/bootstrap-tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/jquery.localScroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/jquery.scrollTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/jquery.sunlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/prettify/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/prettify/lang-css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/prettify/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/sunlight-plugin.doclinks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/sunlight-plugin.linenumbers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/sunlight-plugin.menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/sunlight.javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/sunlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/scripts/toc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/styles/prettify-tomorrow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/styles/site.cosmo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/static/styles/sunlight.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/container.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/details.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/example.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/examples.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/exceptions.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/fires.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/layout.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/mainpage.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/members.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/method.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/params.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/properties.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/returns.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/sections.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/source.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/tutorial.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/docs/template/tmpl/type.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Controller/_static.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Scene.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Scene/_static.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Scene/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Scene/event-management.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Scene/feature-classToggles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Scene/feature-pinning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Scene/getters-setters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/Scene/update-params.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/ScrollMagic/_util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/animation.gsap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/animation.velocity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/debug.addIndicators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/plugins/jquery.ScrollMagic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/fixtures/container-scroll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/karma/jasmine.matchers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/karma/vendor/jasmine-jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/spec/_util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/spec/controller.events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/spec/controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/spec/plugins/animation.gsap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/spec/plugins/animation.velocity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/spec/plugins/debug.addIndicators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/spec/plugins/jquery.ScrollMagic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/spec/scene.events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/tests/spec/scene.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/todo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic.Controller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic.Scene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic_Controller.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic_Scene.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic_Scene_core.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic_Scene_event-management.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic_Scene_feature-classToggles.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic_Scene_feature-pinning.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic_Scene_getters-setters.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollMagic__util.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ScrollScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/animation.GSAP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/animation.Velocity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/classes.list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/debug.addIndicators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/framework.jQuery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/mixins.list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/namespaces.list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/plugins_animation.gsap.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/plugins_animation.velocity.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/plugins_debug.addIndicators.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/plugins_jquery.ScrollMagic.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/URI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/bootstrap-dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/bootstrap-tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/jquery.localScroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/jquery.scrollTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/jquery.sunlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/prettify/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/prettify/lang-css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/prettify/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/sunlight-plugin.doclinks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/sunlight-plugin.linenumbers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/sunlight-plugin.menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/sunlight.javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/sunlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/toc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/styles/prettify-tomorrow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/styles/site.cosmo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/styles/sunlight.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/advanced_tweening.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/anchor_link_scrolling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/animate_css.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/custom_containers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/infinite_scrolling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/mobile_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/parallax_scrolling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/parallax_sections.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/section_slides_manual.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/section_wipes_manual.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/advanced/svg_drawing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/class_toggles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/custom_actions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/debugging.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/going_horizontal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/responsive_duration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/reveal_on_scroll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/scene_manipulation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/section_wipes_natural.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/simple_pinning.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/simple_tweening.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/basic/simple_velocity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/expert/bezier_path_animation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/expert/callback_duration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/expert/cascading_pins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/expert/image_sequence.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/expert/manipulating_tweens.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/expert/mobile_advanced.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/expert/multiple_scroll_directions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/expert/removing_and_destroying.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollmagic/minified/ScrollMagic.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollmagic/minified/plugins/animation.gsap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollmagic/minified/plugins/animation.velocity.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollmagic/minified/plugins/debug.addIndicators.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollmagic/uncompressed/ScrollMagic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollmagic/uncompressed/plugins/animation.gsap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollmagic/uncompressed/plugins/animation.velocity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollmagic/uncompressed/plugins/debug.addIndicators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/demo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="157" column="22" lean-forward="true" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+              <folding>
+                <element signature="e#9694#11582#0" />
+                <element signature="e#11385#11566#0" />
+                <element signature="e#11588#11831#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/normalize.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4312">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-247">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/demo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>has-code</find>
+      <find>wand</find>
+      <find>spark</find>
+      <find>#hatcontainer</find>
+      <find>content-wrapper</find>
+      <find>return this.html(text.repl</find>
+      <find>a[href^=#]</find>
+      <find>section</find>
+      <find>intro</find>
+      <find>parallax</find>
+      <find>info</find>
+      <find>carbonads</find>
+      <find>abracadabra</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/assets/css/normalize.css" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/assets/js/demo.js" />
+        <option value="$PROJECT_DIR$/assets/css/demo.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="355" />
     <option name="width" value="1572" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ScrollMagic-animation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrollMagic-animation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrollMagic-animation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrollMagic-animation" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScrollMagic-animation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScrollMagic-animation" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../janpaepke-ScrollMagic-de5ccdb" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22cafb6c-ce4f-49d2-a4cc-d3b1f60d60b8" name="Default Changelist" comment="" />
+      <created>1570462428864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570462428864</updated>
+      <workItem from="1570462430212" duration="8710000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8710000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Gulp" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12739871" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/basic/class_toggles.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/advanced_tweening.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/anchor_link_scrolling.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/animate_css.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/infinite_scrolling.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/mobile_basic.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/parallax_scrolling.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/parallax_sections.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/section_slides_manual.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/svg_drawing.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/custom_containers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/advanced/section_wipes_manual.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tracking.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4312">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="157" column="22" lean-forward="true" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+          <folding>
+            <element signature="e#9694#11582#0" />
+            <element signature="e#11385#11566#0" />
+            <element signature="e#11588#11831#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
