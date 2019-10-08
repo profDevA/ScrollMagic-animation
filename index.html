@@ -12,9 +12,8 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Roboto+Condensed:400,300,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<!--    <link rel="stylesheet" href="assets/css/normalize.css">-->
-<!--    <link rel="stylesheet" href="assets/css/style.css">-->
-    <link rel="stylesheet" href="assets/css/demo.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="assets/js/lib/greensock/TweenMax.min.js"></script>
     <script src="assets/js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
@@ -24,7 +23,6 @@
     <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
     <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
     <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
-    <script src="assets/js/demo.js"></script>
 
 </head>
 <body>
@@ -90,72 +88,182 @@
 
         <section id="scroll-section">
             <div id="scroll-animation-div">
-
-                <img class="tophat" src="assets/img/demo_tophat.png">
-                <img class="wand" src="assets/img/demo_wand.png">
+                <div class="back-div">FERRIS</div>
+                <div class="title-div">A new way to customize your life</div>
+                <img class="img-6" src="assets/img/Envelope_Animation-6.png">
+                <img class="img-5" src="assets/img/Mobile_Animation-5.png">
+                <img class="img-1" src="assets/img/ModStation_Animation-1.png">
+                <div class="text-div">A sleek, slim organizational beast that takes care of the easy stuff so you can fucus on the big stuff.</div>
+                <div class="text-div-1">And it's sexy AF, because that's how we roll.</div>
+                <img class="img-2" src="assets/img/KeyFolio_Animation-2.png">
+                <img class="img-3" src="assets/img/ModWallet_Animation-3.png">
+                <img class="img-4" src="assets/img/KeyLoop_Animation-4.png">
+                <img class="img-7" src="assets/img/Sunglasses_Animation-7.png">
+                <span class="names wallet">Wallet</span>
+                <span class="names keys">Keys</span>
+                <span class="names organizer">Organizer</span>
+                <span class="names accessories">Accessories</span>
 
             </div>
             <script>
 
+                /** custom coordinate setting */
+
+                var dx = - ($(window).width() - 650) / 2
+                var dy = - ( $(window).height() * 0.45 - 240 )
+
+                dx = parseFloat(dx.toFixed(2))
+                dy = parseFloat(dy.toFixed(2))
+
+                var h = $(window).height()
+                var w = $(window).width()
+
                 // animations
-                var nervousHat = new TimelineMax({repeat: -1, yoyo: true})
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "+=5", left: "-=6", rotation: -3}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "-=10", left: "+=6", rotation: 0}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "+=5", left: "+=6", rotation: 3}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "-=5", left: "-=3", rotation: 1.5}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "+=5", left: "-=6", rotation: -1.5}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "+=5", left: "+=3", rotation: 0}))
-                    .add(TweenMax.to("#scroll-section .tophat", 0.3, {bottom: "-=10"}));
+               /** Image init position */
+                TweenMax.to("#scroll-section .text-div", 0.5, {opacity: 0 });
+                TweenMax.to("#scroll-section .img-1", 0.01, {top: h*0.37+dy, left: w*0.295+dx , opacity:0 });
+                TweenMax.to("#scroll-section .img-2", 0.01, {top: h*1.1+dy, left: w * 0.45 + dx, opacity:0 });
+                TweenMax.to("#scroll-section .img-3", 0.01, {top: h * 0.1 + dy,  left: -w *0.1 + dx, opacity:0 , rotation: 70});
+                TweenMax.to("#scroll-section .img-4", 0.01, {top: h * 0.4 + dy,  left: -w *0.05 + dx, opacity:0 , rotation: 70});
+                TweenMax.to("#scroll-section .img-5", 0.01, {top: -h * 0.4 + dy,  left: w*0.5 + dx, opacity:0, rotation: 45 });
+                TweenMax.to("#scroll-section .img-6", 0.01, {top: -h * 0.4 + dy,  left: w*0.1+dx, opacity:0 , rotation: -40});
+                TweenMax.to("#scroll-section .img-7", 0.01, {top: h * 1.1 + dy,  left: w*0.8+dx, opacity:0, rotation: 30 });
 
-                var abracadabra = TweenMax.fromTo("#scroll-section .wand", 1, {top: -$(window).height()/3, left: 370, rotation: 20}, {top: 10, rotation: -20});
 
-                var reveal = new TimelineMax()
+                /** 0fr  */
+
+                var initFr = new TimelineMax()
                     .add([
-                            TweenMax.to("#scroll-section .tophat", 1, {bottom: $(window).height(), left: "-=50", rotation: -20}),
-                            TweenMax.from("#scroll-section h1", 1, {scale: 0.2, top: "+=70"}),
-                            TweenMax.to("#scroll-section .wand", 0.8, {top: -$(window).height()/3, left: 450, rotation: 30}),
-                            TweenMax.to("#scroll-section .floor", 1, {autoAlpha: 0})
-                        ]);
+                        TweenMax.to("#scroll-section .img-1", 1, {opacity: 1 }),
+                        TweenMax.to("#scroll-section .text-div", 1, {opacity: 1 }),
+                    ]);
 
+                /** 1frame */
+                var firstFr = new TimelineMax()
+                    .add([
+                        TweenMax.to("#scroll-section .text-div", 0.5, {opacity: 0 }),
+                        TweenMax.to("#scroll-section .text-div-1", 0.5, {opacity: 0.5 }),
+                        TweenMax.to("#scroll-section .img-2", 1, {top: h*0.87+dy, left: w * 0.45 + dx, opacity:1 }),
+                        TweenMax.to("#scroll-section .img-3", 1, {top: h * 0.11+ dy,  left: -w *0.05 + dx, opacity:1 , rotation: 70}),
+                        TweenMax.to("#scroll-section .img-4", 1, {top: h * 0.6 + dy,  left: -w *0.01 + dx, opacity:1 , rotation: 70}),
+                        TweenMax.to("#scroll-section .img-5", 1, {top: -h * 0.3 + dy,  left: w*0.5 + dx, opacity:1, rotation: 45 }),
+                        TweenMax.to("#scroll-section .img-6", 1, {top: -h * 0.4 + dy,  left: w*0.1+dx, opacity:1 , rotation: -40}),
+                        TweenMax.to("#scroll-section .img-7", 1, {top: h * 0.9 + dy,  left: w*0.7+dx, opacity:1, rotation: 30 }),
+                    ]);
+
+                /** 2frame */
+                var secondFr = new TimelineMax()
+                    .add([
+                        TweenMax.to("#scroll-section .text-div-1", 0.5, {opacity: 1 }),
+                        TweenMax.to("#scroll-section .img-2", 1, {top: h*0.5+dy, left: w * 0.46 + dx,  }),
+                        TweenMax.to("#scroll-section .img-3", 1, {top: h * 0.23+ dy,  left: w *0.19 + dx, rotation: 65}),
+                        TweenMax.to("#scroll-section .img-4", 1, {top: h * 0.53 + dy,  left: w *0.35 + dx, rotation: 65}),
+                        TweenMax.to("#scroll-section .img-5", 1, {top: -h * 0.05 + dy,  left: w*0.45 + dx, rotation: 15 }),
+                        TweenMax.to("#scroll-section .img-6", 1, {top: -h * 0.33 + dy,  left: w*0.23+dx, rotation: -30}),
+                        TweenMax.to("#scroll-section .img-7", 1, {top: h * 0.65 + dy,  left: w*0.6+dx, rotation: 40 }),
+                    ]);
+
+                /** 3frame */
+                var thirdFr = new TimelineMax()
+                    .add([
+                        TweenMax.to("#scroll-section .text-div-1", 1, {opacity: 0 }),
+                        TweenMax.to("#scroll-section .img-2", 1, {top: h * 0.42+dy, left: w * 0.5 + dx, opacity:1 }),
+                        TweenMax.to("#scroll-section .img-3", 1, {top: h * 0.44+ dy,  left: w *0.32 + dx, rotation: 0}),
+                        TweenMax.to("#scroll-section .img-4", 1, {top: h * 0.45 + dy,  left: w *0.45 + dx, rotation: 0}),
+                        TweenMax.to("#scroll-section .img-5", 1, {top: h * 0.15 + dy,  left: w*0.38 + dx,  rotation: 0 }),
+                        TweenMax.to("#scroll-section .img-6", 1, {top: h * 0.25 + dy,  left: w*0.32+dx,  rotation: -1}),
+                        TweenMax.to("#scroll-section .img-7", 1, {top: h * 0.49 + dy,  left: w*0.56+dx,  rotation: 90 }),
+                    ]);
+
+                /** 4frame */
+                var forthFr = new TimelineMax()
+                    .add([
+                        TweenMax.to("#scroll-section .back-div", 1, {top: h * 0.4+dy, opacity:0.4}),
+                        TweenMax.to("#scroll-section .img-1", 1, {top: h * 0.37+dy-65, opacity:0.4}),
+                        TweenMax.to("#scroll-section .img-2", 1, {top: h * 0.42+dy-65, }),
+                        TweenMax.to("#scroll-section .img-3", 1, {top: h * 0.44+ dy - 65,  }),
+                        TweenMax.to("#scroll-section .img-4", 1, {top: h * 0.45 + dy - 65,  }) ,
+                        TweenMax.to("#scroll-section .img-5", 1, {top: h * 0.15 + dy - 65,  opacity: 0.4 }),
+                        TweenMax.to("#scroll-section .img-6", 1, {top: h * 0.25 + dy - 65 , opacity: 0.4}),
+                        TweenMax.to("#scroll-section .img-7", 1, {top: h * 0.49 + dy - 65 })
+                    ]);
+
+                /** 5frame */
+                var fifthFr = new TimelineMax()
+                    .add([
+                        TweenMax.to("#scroll-section .back-div", 1, {top: h * 0.4+dy, opacity:0.0}),
+                        TweenMax.to("#scroll-section .title-div", 1, {top: h * 0.08+dy, left: w * 0.34 + dx, opacity: 1}),
+                        TweenMax.to("#scroll-section .img-1", 1, {top: h * 0.35 + dy, left: w * 0.4 + dx, rotation:-80, scaleX:0.6, scaleY:0.6 }),
+                        TweenMax.to("#scroll-section .img-2", 1, {top: h * 0.29 + dy,  left: w * 0.42 + dx, }),
+                        TweenMax.to("#scroll-section .img-3", 1, {top: h * 0.325 + dy,  left: w *0.22 + dx, }),
+                        TweenMax.to("#scroll-section .img-4", 1, {top: h * 0.33 + dy,  left: w *0.38 + dx, }),
+                        TweenMax.to("#scroll-section .img-5", 1, {top: h * 0.15 + dy,  left: w*0.38 + dx,  opacity: 0 }),
+                        TweenMax.to("#scroll-section .img-6", 1, {top: h * 0.25 + dy,  left: w*0.32+dx,  opacity: 0}),
+                        TweenMax.to("#scroll-section .img-7", 1, {top: h * 0.42 + dy,  left: w*0.65+dx,  }),
+                        TweenMax.to("#scroll-section .wallet", 1, {top: h * 0.75 + dy,  left: w*0.26+dx, opacity:1 }),
+                        TweenMax.to("#scroll-section .keys", 1, {top: h * 0.75 + dy,  left: w*0.42+dx, opacity:1 }),
+                        TweenMax.to("#scroll-section .organizer", 1, {top: h * 0.75 + dy,  left: w*0.57+dx, opacity:1 }),
+                        TweenMax.to("#scroll-section .accessories", 1, {top: h * 0.75 + dy,  left: w*0.71+dx, opacity:1 }),
+                    ]);
 
                 // container pin
                 var startpin = new ScrollMagic.Scene({
-                        duration: 700
+                        duration: 2000
                     })
                     .setPin("section#scroll-section")
                     .addTo(controller);
 
-                // hat movement
+                /** 0 frame */
                 new ScrollMagic.Scene({
-                        duration: 300,
-                        offset: -100
-                    })
-                    .setTween(nervousHat)
+                    duration: 100,
+                    offset: 20
+                })
+                    .setTween(initFr)
                     .addTo(controller);
 
-                // magic wand
+                /** First frame */
                 new ScrollMagic.Scene({
-                        offset: 20,
-                        duration: 180
-                    })
-
-                    .setTween(abracadabra)
+                    duration: 300,
+                    offset: 100
+                })
+                    .setTween(firstFr)
                     .addTo(controller);
 
-                // big reveal
+                /** Second frame */
                 new ScrollMagic.Scene({
-                        duration: 300,
-                        offset: 260
-                    })
-                    .setTween(reveal)
+                    duration: 300,
+                    offset: 400
+                })
+                    .setTween(secondFr)
                     .addTo(controller);
 
+                /** Third frame */
+                new ScrollMagic.Scene({
+                    duration: 300,
+                    offset: 700
+                })
+                    .setTween(thirdFr)
+                    .addTo(controller);
 
+                /** Forth frame */
+                new ScrollMagic.Scene({
+                    duration: 300,
+                    offset: 1000
+                })
+                    .setTween(forthFr)
+                    .addTo(controller);
 
-            </script>
+                /** Fifth frame */
+                new ScrollMagic.Scene({
+                    duration: 400,
+                    offset: 1300
+                })
+                    .setTween(fifthFr)
+                    .addTo(controller);
+
+                </script>
         </section>
 
     </div>
-    <script src="assets/js/tracking.js"></script>
 </body>
 </html>
