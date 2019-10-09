@@ -57,13 +57,13 @@ section#scroll-section {
 	position: absolute;
 	top: 44%;
 	left: 33%;
-	width: 798px;
-	height: 200px;
+	width: 325px;
+	height: 260px;
 }
 
 .img-2 {
 	position: absolute;
-	width: 190px;
+	width: 313px;
 	height: 303px;
 	left: 2%;
 	top: 52%;
@@ -72,45 +72,48 @@ section#scroll-section {
 .img-3 {
 	position: absolute;
 	top: 44%;
-	height: 350px;
+	height: 425px;
 	left: 33%;
-	width: 215px;
+	width: 425px;
 }
 
 .img-4 {
 	position: absolute;
-	width: 90px;
-	height: 265px;
+	width: 323px;
+	height: 323px;
 	left: -10%;
 }
 
 .img-5 {
 	position: absolute;
-	width: 190px;
-	height: 337px;
+	width: 330px;
+	height: 330px;
 	left: 0;
 	top: 50%
 }
 
 .img-6 {
 	position: absolute;
-	width: 435px;
-	height: 280px;
+	width: 330px;
+	height: 330px;
 	left: -113%;
 	top: -99%;
 }
 
 .img-7 {
 	position: absolute;
-	width: 323px;
-	height: 116px;
+	width: 324px;
+	height: 324px;
 	left: 70%;
 	top: 83%;
 }
 
 .title-div {
 	position: absolute;
-	font-size: 50px;
+	font-size: 57px;
+	font-weight: 700;
+	font-family: cursive;
+	color: #ec219b;
 	opacity: 0;
 	text-align: center;
 }
